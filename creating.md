@@ -5,6 +5,8 @@
   - [Считывание данных][step1-1]
   - [Обработка данных #1][step1-2]
   - [Итоговый код][step1-end]
+- [Шаг #2][step2]
+  - [Отдельная функция для вычислений][step2-1]
 
 # Шаг #1
 В данном шаге мы создадим простой калькулятор который станет основой
@@ -181,7 +183,11 @@ function math(input) {
 ```js
       throw Error("Операции \'" + b + "\' не существует")
 ```
-[step1]: https://github.com/lev43/calculator-js/new/main#%D1%88%D0%B0%D0%B3-1
-[step1-1]: https://github.com/lev43/calculator-js/new/main#%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85
-[step1-2]: https://github.com/lev43/calculator-js/new/main#%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-1
-[step1-end]: https://github.com/lev43/calculator-js/new/main#%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BA%D0%BE%D0%B4
+[step1]: https://github.com/lev43/calculator-js/blob/main/creating.md#%D1%88%D0%B0%D0%B3-1
+[step1-1]: https://github.com/lev43/calculator-js/blob/main/creating.md#%D1%81%D1%87%D0%B8%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85
+[step1-2]: https://github.com/lev43/calculator-js/blob/main/creating.md#%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-1
+[step1-end]: https://github.com/lev43/calculator-js/blob/main/creating.md#%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BA%D0%BE%D0%B4
+
+[step2]: https://github.com/lev43/calculator-js/blob/main/creating.md#%D1%88%D0%B0%D0%B3-2
+[step2-1]: https://github.com/lev43/calculator-js/blob/main/creating.md#%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9
+[step2-end]:
