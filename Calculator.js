@@ -61,7 +61,7 @@ new require('readline').Interface({
 }).on('line', line => {
     try {
         // Разбиваем строку на части которых мы затем обработаем
-        line = line.match(/\d+|[^\s\d\(\)]+|[\(\)]/g)
+        line = line.match(/\d+\.?\d*|[^\s\d\(\)]+|[\(\)]/g)
         if(!line)throw Error("Пустой ввод")
 
         // Преобразуем строку в операции и числа
@@ -71,7 +71,7 @@ new require('readline').Interface({
                 if(actions[e]) input[i] = actions[e] // Если операци, достаем из списка объект операции
                 else if(e == '(' || e == ')') input[i] = e // Тогда проверяем, может это скобки
                 else throw Error(`Нету операции '${e}'`) // Иначе, ошибка
-            else input[i] = parseInt(e) // Если можно преобразовать в число, делаем это
+            else input[i] = parseFloat(e) // Если можно преобразовать в число, делаем это
         })
 
         //Дальше, преобразуем скобки в объекты brackets
