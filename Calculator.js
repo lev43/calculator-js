@@ -5,7 +5,7 @@ const actions = {
     '*': {f: (a, b) => a * b, c: 14},
     '/': {f: (a, b) => a / b, c: 14},
     '%': {f: (a, b) => a % b, c: 14},
-    '!': {f: (a) => {let s = 0; for(let i = 1; i < a; i++)s+=i; return s}, c: 1},
+    '!': {f: (a) => {let s = 0; for(let i = 0; i <= a; i++)s += i; return s}, c: 1},
     '&&': {f: (a, b) => a && b, c: 6},
     '||': {f: (a, b) => a || b, c: 5}
 }
